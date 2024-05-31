@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import React, { useState } from "react";
-// import { HeartIcon, ShoppingCartIcon } from "@heroicons/react/24/outline";
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +15,7 @@ const Header = () => {
             <nav className='flex flex-col md:flex-row justify-between items-center bg-white shadow border px-[20px] md:px-8 lg:px-[135px] pt-3 md:pt-12 pb-4'>
                 <div className='flex w-full justify-between'>
                     <div>
-                        <h1 className='text-lg md:text-2xl font-bold'>API</h1>
+                        <h1 className='text-lg md:text-2xl font-bold'>Logo</h1>
                     </div>
                     <div className='md:hidden'>
                         <button onClick={toggleMenu}>
