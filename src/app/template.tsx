@@ -9,7 +9,7 @@ export default function AboutLayout({
     return (
         <>
             <Navbar />
-            <main className=''>{children}</main>
+            <main className='h-[calc(100dvh-100px)] '>{children}</main>
             <Footer />
         </>
     );
