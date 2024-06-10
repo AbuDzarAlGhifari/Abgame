@@ -35,6 +35,14 @@ const Carousel: React.FC<CarouselProps> = ({
         }
     }, [autoPlay, autoPlayInterval, children.length]);
 
+    React.useEffect(() => {
+        const intervalId = setInterval(() => {
+            nextSlide();
+        }, 6500);
+
+        return () => clearInterval(intervalId);
+    }, []);
+
     return (
         <div className={`relative w-full ${className}`}>
             <div className='overflow-hidden'>
@@ -53,7 +61,7 @@ const Carousel: React.FC<CarouselProps> = ({
             </div>
             <IconButton
                 onClick={prevSlide}
-                className='absolute top-2/4 left-4 transform -translate-y-2/4 p-2 rounded-full bg-gray-800 bg-opacity-60 hover:bg-opacity-90 text-white'>
+                className='absolute top-2/4 left-4 transform -translate-y-2/4 p-2 rounded-full bg-gray-800 bg-opacity-60 hover:bg-opacity-90 text-white text-opacity-40 hover:text-opacity-70'>
                 <svg
                     xmlns='http://www.w3.org/2000/svg'
                     fill='none'
@@ -70,7 +78,7 @@ const Carousel: React.FC<CarouselProps> = ({
             </IconButton>
             <IconButton
                 onClick={nextSlide}
-                className='absolute top-2/4 right-4 transform -translate-y-2/4 p-2 rounded-full bg-gray-800 bg-opacity-60 hover:bg-opacity-90 text-white'>
+                className='absolute top-2/4 right-4 transform -translate-y-2/4 p-2 rounded-full bg-gray-800 bg-opacity-60 hover:bg-opacity-90 text-white text-opacity-40 hover:text-opacity-70'>
                 <svg
                     xmlns='http://www.w3.org/2000/svg'
                     fill='none'

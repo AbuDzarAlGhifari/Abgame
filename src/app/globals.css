@@ -6,4 +6,17 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scrollbar-width: thin;
+    scrollbar-color: gray white;
+}
+
+ul::-webkit-scrollbar-thumb {
+    border: 4px solid transparent;
+    border-radius: 8px;
+  }
+  
+ 
+
+
 

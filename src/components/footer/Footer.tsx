@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
     return (
         <div className='bg-black py-1 text-center '>
-            <p className='py-1 font-poppins italic font-semibold text-center text-white text-xs sm:text-sm'>
+            {/* <p className='py-1 font-poppins italic font-semibold text-center text-white text-xs sm:text-sm'>
                 {`Created by `}
                 <span className='text-yellow-300 hover:text-blue-600 '>
                     <a
@@ -12,7 +12,7 @@ const Footer = () => {
                         Abu Dzar Al Ghifari (2024)
                     </a>
                 </span>
-            </p>
+            </p> */}
             <p className='py-1 font-poppins italic font-semibold text-center text-white text-xs sm:text-sm'>
                 Powered by{" "}
                 <span className='text-yellow-300 hover:text-blue-600'>
