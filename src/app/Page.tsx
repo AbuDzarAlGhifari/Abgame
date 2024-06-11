@@ -1,7 +1,6 @@
 import React from "react";
 import Button from "@/components/ui/Button";
 import Carousel from "@/components/ui/Carousel";
-import { CardBasic } from "@/components/card/CardBasic";
 
 const HomePage = () => {
     return (
@@ -26,7 +25,6 @@ const HomePage = () => {
             {/* <div className='flex flex-col items-center justify-center h-screen'>
                 <Button variant='gradient'>Get Started</Button>
             </div> */}
-            <CardBasic />
         </>
     );
 };

@@ -1,9 +1,6 @@
 import React from "react";
 import Typography from "@/components/ui/Typography";
-import {
-    MagnifyingGlassIcon,
-    MicrophoneIcon,
-} from "@heroicons/react/24/outline";
+import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 
 const NavList = () => {
     return (
